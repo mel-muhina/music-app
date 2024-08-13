@@ -3,7 +3,7 @@ import './App.css'
 import { ArtistIntro, ControlledForm, LikeFeature, SongList } from './components';
 
 function App() {
-  const [like, setLike] = useState("")
+  const [like, setLike] = useState(false)
 
   return (
     <>

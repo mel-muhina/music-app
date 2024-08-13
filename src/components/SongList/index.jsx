@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import './SongsList.css'; 
 import LikeFeature from '../LikeFeature'; 
 
-export default function SongList({ like, setLike }) {
+export default function SongList({ }) {
   const [albums, setAlbums] = useState([]);
   const [albumRelease, setalbumRelease] = useState([]);
   const [albumArt, setalbumArt] = useState(null);
+  const [like, setLike] = useState([]);
 
   
   const hardCodedSongs = {
@@ -65,20 +66,20 @@ export default function SongList({ like, setLike }) {
 
   }
 
-  function handleLike(e) {
-    e.preventDefault();
-     setLike([
-      ...album, {like: false}
-     ])
+//   function handleLike(e) {
+//     e.preventDefault();
+//      setLike([
+//       ...albums, {like: false}
+//      ])
     
- }
+//  }
 
 
   function likeAlbum(like) {
     setLike(like.map((album) => {
       if (album === like) {
         return {
-          ...album, liked
+          ...album, like: !album.like
         }
       }
       return album
@@ -96,7 +97,7 @@ export default function SongList({ like, setLike }) {
       <section>
         <h2> Albums</h2>
         <ul className='album-container'>
-          {albums.map((a, i) => <li key={i} className="albumList" >{albumArt[i]} {a} - {albumRelease[i]}  <LikeFeature /> </li>)}
+          {albums.map((a, i) => <li key={i} className="albumList" >{albumArt[i]} {a} - {albumRelease[i]}  <LikeFeature  likeAlbum={likeAlbum} like={like} /> </li>)}
           
         </ul>
       </section>  
