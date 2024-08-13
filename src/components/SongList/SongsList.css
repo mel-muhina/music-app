@@ -20,6 +20,12 @@
     font-size: 4rem;
 }
 
+.albumh2 {
+    padding: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
 .album-container {
     margin: 0 auto;
     padding: 5%;
