@@ -1,9 +1,17 @@
-function LikeFeature({ like, likeAlbum }) {
+import { useState } from "react";
+import './LikeFeature.css'; 
+
+const LikeFeature = () => {
+
+  const [like, setLike] = useState(false)
+
+  const toggleLike = () => {
+    setLike(!like);
+  }
 	return(
 		
-			<button className="like-btn" onClick={() => likeAlbum(like)}>Like</button>
-		
+      <button onClick={toggleLike} className={like ? 'liked' : ""}>{like ? 'Liked' : 'Like'}</button>		
 	)
-	}
+}
 
 export default LikeFeature;
