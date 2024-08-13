@@ -1,0 +1,27 @@
+.introContainer {
+    margin: auto 0;
+    width: 100%;
+}
+
+.introimg {
+    width: 30%;
+    border-radius: 2%;
+}
+
+.introh1 {
+    font-size: 2.5rem;
+}
+
+.introh2 {
+    font-size: 2rem;
+}
+
+.introp {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.introh1, .introh2, .introp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

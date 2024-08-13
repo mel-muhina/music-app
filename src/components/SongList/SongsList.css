@@ -1,0 +1,34 @@
+.albumCoverImg {
+    /* margin-bottom: 5%; */
+    width: 30vh;
+    border-radius: 2%;
+    margin: 0 auto;
+
+}
+
+.albumList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    gap: 18px;
+}
+
+.albumList p {
+    font-size: 4rem;
+}
+
+.album-container {
+    margin: 0 auto;
+    padding: 5%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* ul {
+    list-style: none;
+} */
