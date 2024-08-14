@@ -34,3 +34,15 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+
+.nav-btn {
+    margin-top: 1%;
+    width: 10%;
+    padding: 1%;
+}
+
+.nav-btn:hover {
+   background-color: rgb(171, 141, 253);
+   cursor: pointer;
+}

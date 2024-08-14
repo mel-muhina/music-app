@@ -2,9 +2,11 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import './SongsList.css'; 
 import LikeFeature from '../LikeFeature'; 
+import { useNavigate } from 'react-router-dom';
 
 export default function SongList() {
   const [albums, setAlbums] = useState([]);
+  const navigate = useNavigate();
   
   const hardCodedSongs = {
     artistName: "Panic! At The Disco",
@@ -42,6 +44,7 @@ export default function SongList() {
   return (
     <>
       <section>
+        <button className={"nav-btn"} onClick={() => navigate("/") }>Back to Home</button>
         <h2 className='albumh2'> Albums</h2>
         <ul className='album-container'>
           {albums.map((album, i) =>
