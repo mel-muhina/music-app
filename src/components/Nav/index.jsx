@@ -12,6 +12,7 @@ export default function Nav() {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/albums">Albums</NavLink>
               <NavLink to="/lyrics">Lyrics</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </ul>
           
           </nav>

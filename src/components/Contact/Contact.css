@@ -1,0 +1,30 @@
+.contact-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%
+}
+
+.contact-form {
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-button {
+    margin-top: 5%;
+    width: 30%;
+    padding: 1%;
+}
+
+.contacth1 {
+    padding-top: 5%;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form-input {
+    padding: 1%;
+    margin: 1%;
+}
