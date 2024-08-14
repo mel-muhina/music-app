@@ -12,7 +12,6 @@ export default function ControlledForm() {
       const response = await fetch(lyricsAPI)
       const data = await response.json()
       const lyricData = data.lyrics
-      console.log("Check ControlledForm data", lyricData)
       setLyrics(lyricData)
     } catch (err) {
             console.log(err)
